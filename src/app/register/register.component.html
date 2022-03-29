@@ -1,0 +1,100 @@
+<!-- <p>register works!</p> -->
+<mat-tab-group dynamicHeight class="main">
+    <mat-tab label=" Registration" class="st">
+        <div class="example-large-box mat-elevation-z1"><hr>
+            <!-- <p>registration works!</p> -->
+            <div class="container">
+                <div class="col-md-06">
+                    <h2>Register Your Detailes</h2>
+                    <form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">FullName:</label>
+                            <input formControlName="fname" name="fname" type="email" class="form-control">
+                            <span *ngIf="fname.invalid && fname.touched" style="color: red;">enter valid full
+                                name</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email@:</label>
+                            <input formControlName="email" name="email" type="email" class="form-control">
+                            <span *ngIf="email.invalid && email.touched" style="color: red;">enter valid email
+                                name</span>
+                        </div>
+                        <div>
+                            <label>CheckOut</label> <br>
+                            <input formControlName="stud" name="stud" type="radio" value="techer">Teacher&nbsp;
+                            <input formControlName="stud" name="stud" type="radio" value="student">Student
+                            <!-- <span *ngIf="gender.invalid && gender.touched" style="color: red;">Select One</span> -->
+
+                        </div><br>
+                        <!-- <div>
+                            <label for="qualification">Qualification</label><br>
+                            <input formControlName="quali" name="quali" type="checkbox" value="M.Tech">6th Standard &nbsp;
+                            <input formControlName="quali" name="quali" type="checkbox" value="SSLC">7th Standard&nbsp;
+                            <input formControlName="quali" name="quali" type="checkbox" value="PUC">8th Standard&nbsp;
+                            <input formControlName="quali" name="quali" type="checkbox" value="Diploma">9th Standard&nbsp;
+                            <input formControlName="quali" name="quali" type="checkbox" value="B.E">SSLC&nbsp;
+                            <span *ngIf="quali.invalid && quali.touched" style="color: red;">Select your
+                                Qualification</span>
+                        </div><br> -->
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Create Your Password</label>
+                            <input formControlName="Password" name="Password" type="email" class="form-control">
+                            <span *ngIf="Password.invalid && Password.touched" style="color: red;">create valid password
+                                minmum 8 characters</span>
+
+                        </div><br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </mat-tab>
+    <!-- <mat-tab label="Teacher Registration">
+        <div class="example-large-box mat-elevation-z4">
+            <div class="container">
+                <div class="col-md-06">
+                    <h2>Register Your Detailes</h2>
+                    <form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">FullName:</label>
+                            <input formControlName="fname" name="fname" type="email" class="form-control">
+                            <span *ngIf="fname.invalid && fname.touched" style="color: red;">enter valid full
+                                name</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email@:</label>
+                            <input formControlName="email" name="email" type="email" class="form-control">
+                            <span *ngIf="email.invalid && email.touched" style="color: red;">enter valid email
+                                name</span>
+                        </div>
+                        <div>
+                            <label for="gender">Gender</label> <br>
+                            <input formControlName="gender" name="gender" type="radio" value="male">Male&nbsp;
+                            <input formControlName="gender" name="gender" type="radio" value="female">FeMale
+                            <span *ngIf="gender.invalid && gender.touched" style="color: red;">Select your gender</span>
+
+                        </div><br>
+                        <DIV>
+                            
+                            <label for="gender">Gender</label> <br>
+                            <input formControlName="gender" name="gender" type="radio" value="male">Male&nbsp;
+                            <input formControlName="gender" name="gender" type="radio" value="female">FeMale
+                            <span *ngIf="gender.invalid && gender.touched" style="color: red;">Select your gender</span>
+
+                        </DIV>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Create Your Password</label>
+                            <input formControlName="Password" name="Password" type="email" class="form-control">
+                            <span *ngIf="Password.invalid && Password.touched" style="color: red;">create valid password
+                                minmum 8 characters</span>
+
+                        </div><br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        
+      </div> 
+    </mat-tab> -->
+</mat-tab-group>

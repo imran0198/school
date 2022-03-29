@@ -1,0 +1,127 @@
+<!-- <div class="demo-button-container">
+    <button mat-raised-button (click)="addData()" class="demo-button">
+      Add data
+    </button>
+    <button
+        mat-raised-button
+        [disabled]="!dataSource.length"
+        (click)="removeData()"
+        class="demo-button">
+      Remove data
+    </button>
+  </div>
+  
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+  <table mat-tabl class="mat-elevation-z8 demo-table">
+
+    Position Column -->
+<!-- <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef>No.</th>
+      <td mat-cell *matCellDef="let element">{{element.position}}</td>
+    </ng-container>
+   -->
+<!-- Name Column -->
+<!-- <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{element.name}}</td>
+    </ng-container>
+   -->
+<!-- Weight Column -->
+<!-- <ng-container matColumnDef="weight">
+      <th mat-header-cell *matHeaderCellDef>Weight</th>
+      <td mat-cell *matCellDef="let element">{{element.weight}}</td>
+    </ng-container> -->
+
+<!-- Symbol Column -->
+<!-- <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef>Symbol</th>
+      <td mat-cell *matCellDef="let element">{{element.symbol}}</td>
+    </ng-container> -->
+
+<!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+   -->
+
+<p>
+  <mat-toolbar>
+    <!-- <span>My Application</span> -->
+    <button mat-raised-button color="accent" style="margin-left: 1200px;" routerLink="/stu"> update time table</button>
+  </mat-toolbar>
+</p>
+
+
+<!-- <table border="2px solid"> -->
+<table border="2px" mat-table class="mat-elevation-z8">
+  <tr mat-header-cell style="background-color: blueviolet; color: aliceblue;font-weight: lighter;">
+
+    <th>Student name</th>
+    <th>Student Email</th>
+    <th>Student Password</th>
+    <th>Student id</th>
+    <th>Update Detailes</th>
+  </tr>
+  <tr mat-header-row *ngFor="let d of data">
+    <ng-container>
+      <td mat-cell>{{d.fname}}</td>
+      <td mat-cell>{{d.email}}</td>
+      <td mat-cell>{{d.Password}}</td>
+      <td mat-cell>{{d.id}}</td>
+      <td mat-cell><button type="button" data-toggle="modal" data-target="#exampleModal3" mat-raised-button
+          color="green" (click)="update(d)"> Edit</button></td>
+    </ng-container>
+  </tr>
+</table>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Updation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="exampleInputEmail1">FullName</label>
+            <input ([ngModel])="obj.fname" formControlName="fname" name="fname" type="email" class="form-control"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+          <!-- <div class="form-group">
+            <label for="exampleInputPassword1">ID</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div> -->
+          <div class="form-group">
+            <label for="exampleInputPassword1">Email</label>
+            <input ([ngModel])="obj.email" formControlName="email" name="email" type="email" class="form-control"
+              id="exampleInputPassword1">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Passsword</label>
+            <input ([ngMOdel])="obj.Password" formControlName="Password" name="Password" type="text"
+              class="form-control" id="exampleInputPassword1">
+          </div>
+          <!-- <div class="form-group">
+            <label for="exampleInputPassword1">id</label>
+            <input ([ngMOdel])="obj.id" formControlName="id" name="id" type="number"
+              class="form-control" id="exampleInputPassword1">
+          </div> -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="updateEmp()">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

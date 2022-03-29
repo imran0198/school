@@ -1,0 +1,109 @@
+{
+  "posts": [
+    {
+      "fname": "imran",
+      "email": "imran@gmail.com",
+      "stud": "techer",
+      "Password": "12345",
+      "id": 2
+    },
+    {
+      "fname": "imran",
+      "email": "imran@gmail.com",
+      "stud": "student",
+      "Password": "Immu@123",
+      "id": 3
+    },
+    {
+      "fname": "ii",
+      "email": "imran@gmail.com",
+      "stud": "student",
+      "Password": "Immu@1234",
+      "id": 4
+    },
+    {
+      "fname": "kr",
+      "email": "kr@gmail.com",
+      "stud": "techer",
+      "Password": "123456",
+      "id": 5
+    },
+    {
+      "fname": "imran",
+      "email": "imran1@gmail.com",
+      "stud": "techer",
+      "Password": "Immu@1235",
+      "id": 6
+    },
+    {
+      "fname": "manju",
+      "email": "manju@gmail.com",
+      "stud": "techer",
+      "Password": "Manju@123",
+      "id": 7
+    },
+    {
+      "fname": "imran",
+      "email": "imran@gmail.com",
+      "stud": "student",
+      "Password": "Immu@1235",
+      "id": 8
+    },
+    {
+      "fname": "pavithra",
+      "email": "pavi@gmail.com",
+      "stud": "techer",
+      "Password": "Pavi@123",
+      "id": 9
+    },
+    {
+      "fname": "pavi",
+      "email": "pavi@gmail.com",
+      "stud": "student",
+      "Password": "Pavi@12345",
+      "id": 10
+    },
+    {
+      "fname": "imran",
+      "email": "imran@gmail.com",
+      "Password": "123455",
+      "id": 11
+    },
+    {
+      "fname": "imran",
+      "email": "imran@gmail.com",
+      "Password": "12345",
+      "id": 12
+    },
+    {
+      "fname": "imran",
+      "email": "imran@gmail.com",
+      "Password": "1234588",
+      "id": 13
+    },
+    {
+      "fname": "adi",
+      "email": "ad@gmail.com",
+      "stud": "student",
+      "Password": "adi@123",
+      "id": 14
+    },
+    {
+      "fname": "aditya",
+      "email": "aditya@gmail.com",
+      "stud": "techer",
+      "Password": "adi@123",
+      "id": 15
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
